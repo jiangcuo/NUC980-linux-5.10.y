@@ -221,6 +221,7 @@ config BT_HCIUART_RTL
 	  Say Y here to compile support for Realtek protocol.
 
 config BT_AICBTUSB
+	bool "AIC HCI USB driver"
 	tristate "AIC HCI USB driver"
 	depends on USB
 	help
