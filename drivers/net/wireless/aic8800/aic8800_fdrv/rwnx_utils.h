@@ -15,6 +15,13 @@
 #include "lmac_msg.h"
 #include "aicwf_debug.h"
 
+#ifdef ANDROID_PLATFORM 
+#define HIGH_KERNEL_VERSION KERNEL_VERSION(5, 15, 41)
+#else
+#define HIGH_KERNEL_VERSION KERNEL_VERSION(6, 0, 0)
+#endif
+
+
 #if 0
 #ifdef CONFIG_RWNX_DBG
 /*  #define RWNX_DBG(format, arg...) pr_warn(format, ## arg) */
